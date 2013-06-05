@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" android:background="@color/DominoesBackgroundColor" android:id="@+id/gameFinishParent">
+
+        <RelativeLayout
+            android:id="@+id/gamefinishlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/winner_background"
+            android:minHeight="644dp"
+            android:minWidth="1085dp" android:layout_centerInParent="true">
+
+            <ImageView
+                android:id="@+id/finishMJLogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="116dp"
+                android:minHeight="114dp"
+                android:minWidth="523dp"
+                android:src="@drawable/title" />
+
+            <ListView
+                android:id="@+id/winnerListView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="200dp"
+                android:layout_marginLeft="292dp"
+                android:layout_marginRight="294dp"
+                android:layout_marginTop="250dp"
+                android:background="@color/DominoesWhiteColor"
+                android:divider="@color/DominoesWhiteColor"
+                android:dividerHeight="3dp"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:isScrollContainer="true" >
+            </ListView>
+
+            <Button
+                android:id="@+id/finishExitButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="580dp"
+                android:background="@drawable/exit_button_light"
+                android:minHeight="26dp"
+                android:minWidth="105dp" android:layout_alignLeft="@id/winnerListView"/>
+
+            <Button
+                android:id="@+id/finishMenuButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/menu_button_light" android:minHeight="26dp" android:minWidth="105dp" android:layout_alignRight="@id/winnerListView" android:layout_alignTop="@id/finishExitButton"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>

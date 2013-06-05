@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="scoreDialgBoxWidth">284dp</dimen>
+    <dimen name="scoreDialgBoxHeight">166dp</dimen>
+    <dimen name="endOfRoundDialgBoxWidth">534dp</dimen>
+    <dimen name="endOfRoundDialgBoxHeight">336dp</dimen>
+    <dimen name="endOfRoundTextBoxWidth">284dp</dimen>
+    <dimen name="endOfRoundTextBoxHeight">166dp</dimen>
+    <dimen name="highlightBoxWidth">230dp</dimen>
+    <dimen name="highlightBoxHeight">115dp</dimen>
+    <dimen name="finishScreenBGLightBoxWidth">1085dp</dimen>
+    <dimen name="finishScreenBGLightBoxHeight">386dp</dimen>
+</resources>

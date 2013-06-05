@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="DominoesBackgroundColor">#006633</color>
+    <color name="DominoesHighlightColor">#79B53D</color>
+    <color name="DialogBackgroundColour">#FFFF99</color>
+    <color name="DialogTextColour">#1E1E1E</color>
+    <color name="DialogTextLightColour">#EFEFEF</color>
+    <color name="DialogBackgroundDarkColour">#999966</color>
+    <color name="DominoesBackgroundLightColor">#669933</color>
+    <color name="DominoesWhiteColor">#FFFFFF</color>
+    
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+    <size android:height="@dimen/endOfRoundDialgBoxHeight" android:width="@dimen/endOfRoundDialgBoxWidth" />
+    <gradient android:angle="45" android:startColor="@color/DialogBackgroundDarkColour" android:centerColor="@color/DialogBackgroundColour" android:endColor="@color/DialogBackgroundDarkColour" />
+
+
+</shape>

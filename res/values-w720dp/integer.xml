@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="northWestLeft">440</integer>
+    <integer name="northWestTop">205</integer>
+    <integer name="northWestRight">670</integer>
+    <integer name="northWestBottom">320</integer>
+    <integer name="northLeft">670</integer>
+    <integer name="northTop">205</integer>
+    <integer name="northRight">900</integer>
+    <integer name="northBottom">320</integer>
+    <integer name="northEastLeft">900</integer>
+    <integer name="northEastTop">205</integer>
+    <integer name="northEastRight">1130</integer>
+    <integer name="northEastBottom">320</integer>
+    <integer name="eastLeft">800</integer>
+    <integer name="eastTop">320</integer>
+    <integer name="eastRight">1130</integer>
+    <integer name="eastBottom">435</integer>
+    <integer name="southEastLeft">900</integer>
+    <integer name="southEastTop">435</integer>
+    <integer name="southEastRight">1130</integer>
+    <integer name="southEastBottom">550</integer>
+    <integer name="southLeft">670</integer>
+    <integer name="southTop">435</integer>
+    <integer name="southRight">900</integer>
+    <integer name="southBottom">550</integer>
+    <integer name="southWestLeft">440</integer>
+    <integer name="southWestTop">435</integer>
+    <integer name="southWestRight">670</integer>
+    <integer name="southWestBottom">550</integer>
+    <integer name="westLeft">440</integer>
+    <integer name="westTop">320</integer>
+    <integer name="westRight">770</integer>
+    <integer name="westBottom">435</integer>
+    <integer name="tileWidth">27</integer>
+    <integer name="tileHeight">52</integer>
+    <integer name="boardLeft">52</integer>
+    <integer name="boardTop">52</integer>
+    <integer name="boardRight">580</integer>
+    <integer name="boardBottom">290</integer>
+
+    
+</resources>

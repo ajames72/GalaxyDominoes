@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" android:background="@color/DominoesBackgroundColor" android:id="@+id/gameFinishParent">
+
+        <TextView
+            android:id="@+id/gameFinishHeaderText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="64dp"
+            android:layout_marginTop="28dp"
+            android:text="@string/gameWonHeaderText"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <Button
+            android:id="@+id/finishExitButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/gameFinishHeaderText"
+            android:layout_below="@+id/gameFinishHeaderText"
+            android:layout_marginTop="46dp"
+            android:text="Exit" />
+
+        <Button
+            android:id="@+id/finishMenuButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/finishExitButton"
+            android:layout_below="@+id/finishExitButton"
+            android:layout_marginTop="49dp"
+            android:text="Menu" />
+
+    </RelativeLayout>

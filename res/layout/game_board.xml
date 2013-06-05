@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/gameBoardParent"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/DominoesBackgroundColor" >
+
+    <ImageView
+        android:id="@+id/gameBoardBackground"
+        android:layout_width="618dp"
+        android:layout_height="366dp"
+        android:src="@drawable/game_bg" android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:id="@+id/userCharacterIcon"
+        android:layout_width="52dp"
+        android:layout_height="43dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentLeft="false"
+        android:src="@drawable/ch1_game_on" android:layout_marginLeft="83dp" android:layout_marginTop="60dp"/>
+
+    <ImageView
+        android:id="@+id/currentPlayerIcon"
+        android:layout_width="52dp"
+        android:layout_height="43dp"
+        android:layout_marginLeft="152dp"
+        android:src="@drawable/ch1_game_off" android:layout_marginTop="60dp"/>
+
+    <Button
+        android:id="@+id/menuButtonGame"
+        android:layout_width="60dp"
+        android:layout_height="15dp"
+        android:background="@drawable/menu_button_game" android:layout_marginLeft="550dp" android:layout_marginTop="322dp"/>
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="83dp" android:layout_alignBaseline="@id/gameBoardBackground" android:layout_marginTop="140dp" android:id="@+id/playerhand">
+
+        <TableRow
+            android:id="@+id/playerHandRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="43dp" >
+
+            <ImageView
+                android:id="@+id/tile1"
+                android:layout_width="27dp"
+                android:layout_height="52dp"
+                android:src="@drawable/tilex_x" android:visibility="visible"/>
+
+            <ImageView
+                android:id="@+id/tile2"
+                android:layout_width="27dp"
+                android:layout_height="52dp"
+                android:src="@drawable/tilex_x" android:layout_marginLeft="3dp"/>
+
+            <ImageView
+                android:id="@+id/tile3"
+                android:layout_width="27dp"
+                android:layout_height="52dp"
+                android:src="@drawable/tilex_x" android:layout_marginLeft="3dp"/>
+
+            <ImageView
+                android:id="@+id/tile4"
+                android:layout_width="27dp"
+                android:layout_height="52dp"
+                android:src="@drawable/tilex_x" android:layout_marginLeft="3dp"/>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/playerHandRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="43dp" >
+
+            <ImageView
+                android:id="@+id/tile5"
+                android:layout_width="27dp"
+                android:layout_height="52dp"
+                android:src="@drawable/tilex_x" android:layout_marginTop="4dp"/>
+
+            <ImageView
+                android:id="@+id/tile6"
+                android:layout_width="27dp"
+                android:layout_height="52dp"
+                android:src="@drawable/tilex_x" android:layout_marginTop="4dp"/>
+
+            <ImageView
+                android:id="@+id/tile7"
+                android:layout_width="27dp"
+                android:layout_height="52dp"
+                android:src="@drawable/tilex_x" android:layout_marginTop="4dp"/>
+
+            <ImageView
+                android:id="@+id/tile8"
+                android:layout_width="27dp"
+                android:layout_height="52dp"
+                android:src="@drawable/tilex_x" android:visibility="invisible" android:layout_marginTop="4dp"/>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/playerHandRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="43dp" >
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+        </TableRow>
+    </TableLayout>
+
+    <RelativeLayout
+        android:id="@+id/playarea"
+        android:layout_width="415dp"
+        android:layout_height="276dp"
+        android:layout_marginLeft="180dp"
+        android:layout_marginTop="64dp" >
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/exitButton"
+        android:layout_width="60dp"
+        android:layout_height="15dp"
+        android:layout_marginBottom="56dp"
+        android:layout_marginRight="26dp"
+        android:background="@drawable/exit_button" />
+
+</RelativeLayout>

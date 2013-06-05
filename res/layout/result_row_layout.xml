@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" android:minHeight="100dp" android:background="@color/DominoesBackgroundLightColor">
+    
+    <TextView
+                android:id="@+id/winnerPositionView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView" android:layout_marginRight="20dp" android:textColor="@color/DialogTextLightColour" android:textSize="25dp" android:minWidth="100dp"/>
+
+            <ImageView
+                android:id="@+id/winnerIconView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ch1_on" android:layout_marginRight="20dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/winnerNameView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:textColor="@color/DialogTextLightColour"
+                    android:textSize="20dp" android:minWidth="200dp"/>
+
+                <TextView
+                    android:id="@+id/winnerScoreView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TextView" android:layout_below="@id/winnerNameView" android:textColor="@color/DialogTextLightColour" android:textSize="35dp" android:minWidth="200dp"/>
+
+            </RelativeLayout>
+
+</LinearLayout>

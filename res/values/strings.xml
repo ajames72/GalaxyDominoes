@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Mah-Jomino</string>
+    <string name="newRoundOKButtonText">OK</string>
+    <string name="gameWonHeaderText">Winner!</string>
+    <string name="playerScoreText">Player {pNum}\nHas scored {score} points!</string>
+    <string name="endOfRoundDiallogBoxHeaderText">Player {pNum} has won this round!</string>
+    <string name="endOfRoundScoreText">Player {pNum} has {score} points</string>
+
+</resources>

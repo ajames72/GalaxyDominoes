@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="366dp" android:background="@color/DominoesBackgroundColor" android:id="@+id/gamemenucontainer">
+
+    <TableLayout
+        android:layout_width="618dp"
+        android:layout_height="366dp"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentTop="false"
+        android:background="@drawable/bg" android:layout_centerHorizontal="false" android:layout_centerInParent="true">
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="618dp"
+            android:layout_height="wrap_content" android:layout_marginTop="79dp">
+
+            <Button
+                android:id="@+id/ch1_button"
+                android:layout_width="79dp"
+                android:layout_height="94dp"
+                android:background="@drawable/char1_button" android:layout_marginLeft="104dp"/>
+
+            <Button
+                android:id="@+id/ch2_button"
+                android:layout_width="79dp"
+                android:layout_height="94dp"
+                android:background="@drawable/char2_button" android:layout_marginLeft="31dp"/>
+
+            <Button
+                android:id="@+id/ch3_button"
+                android:layout_width="79dp"
+                android:layout_height="94dp"
+                android:background="@drawable/char3_button" android:layout_marginLeft="31dp"/>
+
+            <Button
+                android:id="@+id/ch4_button"
+                android:layout_width="79dp"
+                android:layout_height="94dp"
+                android:background="@drawable/char4_button" android:layout_marginLeft="31dp"/>
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="618dp"
+        android:layout_height="wrap_content" android:layout_marginTop="224dp" android:layout_centerInParent="false" android:layout_centerHorizontal="true">
+
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/leveleasybutton"
+                android:layout_width="110dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="104dp"
+                android:background="@drawable/level_easy_button" android:focusable="false"/>
+
+            <Button
+                android:id="@+id/levelmediumbutton"
+                android:layout_width="110dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="40dp"
+                android:background="@drawable/level_medium_button" android:focusable="false"/>
+
+            <Button
+                android:id="@+id/levelhardbutton"
+                android:layout_width="110dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="40dp"
+                android:background="@drawable/level_hard_button" android:focusable="false"/>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow6"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp" android:layout_marginTop="53dp">
+
+            <Button
+                android:id="@+id/roundsonebutton"
+                android:layout_width="110dp"
+                android:layout_height="20dp"
+                android:background="@drawable/rounds_1_button" android:layout_marginLeft="104dp" android:focusable="false"/>
+
+            <Button
+                android:id="@+id/roundsthreebutton"
+                android:layout_width="110dp"
+                android:layout_height="20dp"
+                android:background="@drawable/rounds_3_button" android:layout_marginLeft="40dp" android:focusable="false"/>
+
+            <Button
+                android:id="@+id/roundsfivebutton"
+                android:layout_width="110dp"
+                android:layout_height="20dp"
+                android:background="@drawable/rounds_5_button" android:layout_marginLeft="40dp" android:focusable="false"/>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>

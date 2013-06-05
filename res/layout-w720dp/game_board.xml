@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/gameBoardParent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/DominoesBackgroundColor" >
+
+    <RelativeLayout
+        android:id="@+id/gameBoardLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentTop="false"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="false"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="225dp"
+        android:layout_marginTop="214dp"
+        android:background="@drawable/game_bg"
+        android:minHeight="644dp"
+        android:minWidth="1085dp" >
+
+        <ImageView
+            android:id="@+id/userCharacterIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="68dp"
+            android:layout_marginTop="90dp"
+            android:minHeight="63dp"
+            android:minWidth="92dp"
+            android:src="@drawable/ch1_game_on" android:cropToPadding="true" android:paddingBottom="3dp"/>
+
+        <ImageView
+            android:id="@+id/currentPlayerIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/userCharacterIcon"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@+id/userCharacterIcon"
+            android:minHeight="63dp"
+            android:minWidth="92dp" android:paddingBottom="3dp"/>
+
+        <ImageView
+            android:id="@+id/tile1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/userCharacterIcon"
+            android:layout_below="@+id/userCharacterIcon"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="49dp"
+            android:minHeight="76dp"
+            android:minWidth="38dp"
+            android:src="@drawable/tilex_x" />
+
+        <ImageView
+            android:id="@+id/tile2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tile1"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@+id/tile1"
+            android:minHeight="76dp"
+            android:minWidth="38dp"
+            android:src="@drawable/tilex_x" />
+
+        <ImageView
+            android:id="@+id/tile3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tile2"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@+id/tile2"
+            android:minHeight="76dp"
+            android:minWidth="38dp"
+            android:src="@drawable/tilex_x" />
+
+        <ImageView
+            android:id="@+id/tile4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tile3"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@+id/tile3"
+            android:minHeight="76dp"
+            android:minWidth="38dp"
+            android:src="@drawable/tilex_x" />
+
+        <ImageView
+            android:id="@+id/tile5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tile4"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@+id/tile4"
+            android:minHeight="76dp"
+            android:minWidth="38dp"
+            android:src="@drawable/tilex_x" />
+
+        <ImageView
+            android:id="@+id/tile6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tile1"
+            android:layout_below="@+id/tile1"
+            android:layout_marginTop="3dp"
+            android:minHeight="76dp"
+            android:minWidth="38dp"
+            android:src="@drawable/tilex_x"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/tile7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tile2"
+            android:layout_alignTop="@+id/tile6"
+            android:minHeight="76dp"
+            android:minWidth="38dp"
+            android:src="@drawable/tilex_x" android:visibility="invisible"/>
+
+        <ImageView
+            android:id="@+id/tile8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tile3"
+            android:layout_alignTop="@+id/tile7"
+            android:minHeight="76dp"
+            android:minWidth="38dp"
+            android:src="@drawable/tilex_x"
+            android:visibility="invisible" />
+
+        <RelativeLayout
+            android:id="@+id/playarea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/currentPlayerIcon"
+            android:layout_marginLeft="28dp"
+            android:layout_toRightOf="@+id/currentPlayerIcon"
+            android:minHeight="396dp"
+            android:minWidth="696dp" android:layout_marginTop="-15dp">
+
+            <ImageView
+                android:id="@+id/nwHighlight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/drop_highlight" android:layout_marginTop="22dp" android:layout_marginLeft="4dp" android:visibility="invisible"/>
+
+            <ImageView
+                android:id="@+id/startPosition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/tilex_x"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/gamePlayDialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="false"
+                android:layout_alignParentTop="false"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/score_dialog_background"
+                android:gravity="center"
+                android:minHeight="166dp"
+                android:minWidth="284dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/DialogTextColour"
+                android:visibility="invisible" android:lines="5" android:lineSpacingExtra="10.0dp" android:textSize="25sp"/>
+
+            <RelativeLayout
+                android:id="@+id/newRoundDialogLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/endofround_dialog_background"
+                android:visibility="invisible" >
+
+                <TextView
+                    android:id="@+id/newRoundDialogHeaderText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TextView" android:lines="1" android:minWidth="400dp" android:textSize="35dp" android:layout_centerHorizontal="true" android:layout_marginTop="10dp" android:textColor="@color/DialogTextColour"/>
+
+                <ImageView
+                    android:id="@+id/winnerIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:minHeight="188dp"
+                    android:minWidth="158dp"
+                    android:src="@drawable/ch1_on" android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:id="@+id/newRoundDialogText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="10.0dp"
+                    android:lines="5"
+                    android:minHeight="150dp"
+                    android:minWidth="284dp"
+                    android:textColor="@color/DialogTextLightColour"
+                    android:textSize="28sp" android:layout_toRightOf="@id/winnerIcon" android:layout_marginLeft="20dp" android:layout_centerVertical="true" android:layout_marginTop="20dp" android:shadowColor="#000000" android:shadowDx="10.0" android:shadowDy="15.0" android:shadowRadius="10.0"/>
+
+                <Button
+                    android:id="@+id/newRoundContinuebutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="41dp" android:minWidth="136dp" android:layout_alignParentBottom="false" android:layout_centerHorizontal="true" android:layout_below="@id/newRoundDialogText" android:layout_marginTop="50dp" android:text="Continue" android:textSize="18dp" android:textColor="@color/DialogTextColour"/>
+
+            </RelativeLayout>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignTop="@+id/newRoundDialogLayout"
+                android:layout_marginLeft="51dp" />
+
+            <ImageView
+                android:id="@+id/nHighlight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/nwHighlight"
+                android:layout_toRightOf="@+id/nwHighlight"
+                android:src="@drawable/drop_highlight" android:visibility="invisible"/>
+
+            <ImageView
+                android:id="@+id/neHighlight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/nHighlight"
+                android:layout_toRightOf="@+id/nHighlight"
+                android:src="@drawable/drop_highlight" android:visibility="invisible"/>
+
+            <ImageView
+                android:id="@+id/wHighlight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/drop_highlight" android:layout_below="@id/nwHighlight" android:layout_alignLeft="@id/nwHighlight" android:visibility="invisible" android:layout_marginTop="8dp"/>
+
+            <ImageView
+                android:id="@+id/eHighlight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/drop_highlight" android:layout_alignLeft="@id/neHighlight" android:visibility="invisible" android:layout_alignTop="@id/wHighlight"/>
+
+            <ImageView
+                android:id="@+id/swHighlight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/drop_highlight" android:layout_alignLeft="@id/wHighlight" android:layout_below="@id/wHighlight" android:visibility="invisible" android:layout_marginTop="8dp"/>
+
+            <ImageView
+                android:id="@+id/sHighlight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/drop_highlight" android:layout_alignTop="@id/swHighlight" android:layout_toRightOf="@id/swHighlight" android:visibility="invisible"/>
+
+            <ImageView
+                android:id="@+id/seHighlight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/drop_highlight" android:layout_alignLeft="@id/eHighlight" android:visibility="invisible" android:layout_alignTop="@id/swHighlight"/>
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/menuButtonGame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/playarea"
+            android:background="@drawable/menu_button_game"
+            android:minHeight="26dp"
+            android:minWidth="105dp" />
+
+        <Button
+            android:id="@+id/exitButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/exit_button"
+            android:minHeight="26dp"
+            android:minWidth="105dp" android:layout_alignTop="@id/menuButtonGame" android:layout_marginLeft="30dp"/>
+
+        <ImageView
+            android:id="@+id/tile9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tile8"
+            android:src="@drawable/tilex_x" android:minHeight="76dp" android:minWidth="38dp" android:layout_alignLeft="@id/tile4" android:visibility="invisible"/>
+
+        <ImageView
+            android:id="@+id/tile10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tile9"
+            android:src="@drawable/tilex_x" android:minHeight="76dp" android:minWidth="38dp" android:layout_alignLeft="@id/tile5" android:visibility="invisible"/>
+
+        <ImageView
+            android:id="@+id/tile11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tile1"
+            android:layout_below="@+id/tile6"
+            android:src="@drawable/tilex_x" android:minHeight="76dp" android:minWidth="38dp" android:layout_marginTop="3dp" android:visibility="invisible"/>
+
+        <ImageView
+            android:id="@+id/tile12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tile11"
+            android:src="@drawable/tilex_x" android:minHeight="76dp" android:minWidth="38dp" android:layout_alignLeft="@id/tile7" android:visibility="invisible"/>
+
+        <ImageView
+            android:id="@+id/tile13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tile12"
+            android:layout_toRightOf="@+id/tile12"
+            android:src="@drawable/tilex_x" android:minHeight="76dp" android:minWidth="38dp" android:layout_alignLeft="@id/tile8" android:visibility="invisible"/>
+
+        <ImageView
+            android:id="@+id/tile14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tile13"
+            android:src="@drawable/tilex_x" android:minHeight="76dp" android:minWidth="38dp" android:layout_alignLeft="@id/tile9" android:visibility="invisible"/>
+
+        <ImageView
+            android:id="@+id/tile15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tile14"
+            android:layout_toLeftOf="@+id/playarea"
+            android:src="@drawable/tilex_x" android:minHeight="76dp" android:minWidth="38dp" android:layout_alignLeft="@id/tile10" android:visibility="invisible"/>
+
+        <ImageView
+            android:id="@+id/bank1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="false"
+            android:src="@drawable/tilex_x" android:minHeight="62dp" android:minWidth="32dp" android:layout_marginLeft="574dp" android:layout_marginTop="8dp" android:visibility="invisible"/>
+
+        <ImageView
+            android:id="@+id/bank2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="false"
+            android:src="@drawable/tilex_x" android:minHeight="62dp" android:minWidth="32dp" android:layout_alignTop="@id/bank1" android:layout_toRightOf="@id/bank1" android:layout_marginLeft="8dp" android:visibility="invisible"/>
+
+        <ImageView
+            android:id="@+id/bank3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="false"
+            android:layout_toRightOf="@+id/bank2"
+            android:src="@drawable/tilex_x" android:minHeight="62dp" android:minWidth="32dp" android:layout_alignTop="@id/bank1" android:layout_marginLeft="8dp" android:visibility="invisible"/>
+
+        <ImageView
+            android:id="@+id/bank4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="false"
+            android:layout_toRightOf="@+id/bank3"
+            android:src="@drawable/tilex_x" android:minHeight="62dp" android:minWidth="32dp" android:layout_alignTop="@id/bank1" android:layout_marginLeft="8dp" android:visibility="invisible"/>
+
+        <ImageView
+            android:id="@+id/bank5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="false"
+            android:layout_toRightOf="@+id/bank4"
+            android:src="@drawable/tilex_x" android:minHeight="62dp" android:minWidth="32dp" android:layout_alignTop="@id/bank1" android:layout_marginLeft="8dp" android:visibility="invisible"/>
+
+        <ImageView
+            android:id="@+id/bank6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="false"
+            android:layout_toRightOf="@+id/bank5"
+            android:src="@drawable/tilex_x" android:minHeight="62dp" android:minWidth="32dp" android:layout_alignTop="@id/bank1" android:layout_marginLeft="8dp" android:visibility="invisible"/>
+
+        <ImageView
+            android:id="@+id/bank7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="false"
+            android:layout_toRightOf="@+id/bank6"
+            android:src="@drawable/tilex_x" android:minHeight="62dp" android:minWidth="32dp" android:layout_alignTop="@id/bank1" android:layout_marginLeft="8dp" android:visibility="invisible"/>
+
+        <ImageView
+            android:id="@+id/bank8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="false"
+            android:src="@drawable/tilex_x" android:minHeight="62dp" android:minWidth="32dp" android:layout_alignTop="@id/bank1" android:layout_toRightOf="@id/bank7" android:layout_marginLeft="8dp" android:visibility="invisible"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

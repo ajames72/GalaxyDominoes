@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/gameMenuParent"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/DominoesBackgroundColor" >
+
+    <RelativeLayout
+        android:id="@+id/gameMenuLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/bg"
+        android:minHeight="644dp"
+        android:minWidth="1085dp" >
+
+        <Button
+            android:id="@+id/ch1_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="183dp"
+            android:layout_marginTop="140dp"
+            android:background="@drawable/char1_button"
+            android:minHeight="166dp"
+            android:minWidth="139dp" />
+
+        <Button
+            android:id="@+id/ch2_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/ch1_button"
+            android:layout_alignBottom="@+id/ch1_button"
+            android:layout_marginLeft="54dp"
+            android:layout_toRightOf="@+id/ch1_button"
+            android:background="@drawable/char2_button"
+            android:minHeight="166dp"
+            android:minWidth="139dp" />
+
+        <Button
+            android:id="@+id/ch3_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/ch2_button"
+            android:layout_alignBottom="@+id/ch2_button"
+            android:layout_marginLeft="55dp"
+            android:layout_toRightOf="@+id/ch2_button"
+            android:background="@drawable/char3_button"
+            android:minHeight="166dp"
+            android:minWidth="139dp" />
+
+        <Button
+            android:id="@+id/ch4_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/ch3_button"
+            android:layout_alignBottom="@+id/ch3_button"
+            android:layout_marginLeft="57dp"
+            android:layout_toRightOf="@+id/ch3_button"
+            android:background="@drawable/char4_button"
+            android:minHeight="166dp"
+            android:minWidth="139dp" />
+
+        <Button
+            android:id="@+id/leveleasybutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/ch1_button"
+            android:layout_below="@+id/ch1_button"
+            android:layout_marginTop="90dp"
+            android:background="@drawable/level_easy_button"
+            android:clickable="false"
+            android:focusable="false"
+            android:minHeight="32dp"
+            android:minWidth="193dp" />
+
+        <Button
+            android:id="@+id/levelmediumbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/leveleasybutton"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/level_medium_button"
+            android:clickable="false"
+            android:focusable="false"
+            android:minHeight="32dp"
+            android:minWidth="193dp" />
+
+        <Button
+            android:id="@+id/levelhardbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/levelmediumbutton"
+            android:layout_toRightOf="@+id/ch3_button"
+            android:background="@drawable/level_hard_button"
+            android:clickable="false"
+            android:focusable="false"
+            android:minHeight="32dp"
+            android:minWidth="193dp" />
+
+        <Button
+            android:id="@+id/roundsonebutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/leveleasybutton"
+            android:layout_below="@+id/leveleasybutton"
+            android:layout_marginTop="94dp"
+            android:background="@drawable/rounds_1_button"
+            android:clickable="false"
+            android:focusable="false"
+            android:minHeight="32dp"
+            android:minWidth="193dp" />
+
+        <Button
+            android:id="@+id/roundsthreebutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/levelmediumbutton"
+            android:layout_alignTop="@+id/roundsonebutton"
+            android:background="@drawable/rounds_3_button"
+            android:clickable="false"
+            android:focusable="false"
+            android:minHeight="32dp"
+            android:minWidth="193dp" />
+
+        <Button
+            android:id="@+id/roundsfivebutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/levelhardbutton"
+            android:layout_alignTop="@+id/roundsthreebutton"
+            android:background="@drawable/rounds_5_button"
+            android:clickable="false"
+            android:focusable="false"
+            android:linksClickable="true"
+            android:minHeight="32dp"
+            android:minWidth="193dp" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/exitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/gameMenuLayout"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/exit_button_light" android:minHeight="26dp" android:minWidth="105dp" android:layout_marginTop="645dp" android:layout_marginLeft="30dp"/>
+
+</RelativeLayout>
